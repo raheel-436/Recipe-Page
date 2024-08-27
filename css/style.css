@@ -21,16 +21,15 @@
 
 .main-container {
   width: 100%;
-  height: 100vh;
   background-color: var(--Stone-100);
   display: flex;
   justify-content: center;
 }
 
 .container {
-  margin-top: 5rem;
+  margin: 5rem 0rem;
   width: 45%;
-  height: 90%;
+  min-height: 90%;
   background-color: var(--white);
   border-radius: 1rem;
 }
@@ -53,7 +52,8 @@
   color: var(--Stone-900);
 }
 
-.recipe-summary {
+.recipe-summary,
+.nutrition-summary {
   margin: 1rem 0rem;
   width: 100%;
   line-height: 1.5;
@@ -81,5 +81,87 @@
   padding-left: 1rem;
 }
 .preperation-container ul li::marker {
+  color: var(--rose-800);
+}
+.ingredients-container {
+  margin-bottom: 2rem;
+}
+#ingredients-heading {
+  margin-top: 1rem;
+  margin-bottom: 0.8rem;
+  color: var(--Brown-800);
+  font-family: "Young Serif", serif;
+}
+
+.ingredients-container ul {
+  padding-left: 2rem;
+}
+
+.ingredients-container ul li {
+  padding-top: 0.9rem;
+  padding-left: 1rem;
+  color: var(--Stone-600);
+}
+
+/* Instruction container */
+.instructions-container {
+  margin-bottom: 2rem;
+}
+#instructions-heading {
+  margin-top: 1.5rem;
+  margin-bottom: 0.8rem;
+  color: var(--Brown-800);
+  font-family: "Young Serif", serif;
+}
+
+.instructions-container ol {
+  padding-left: 2rem;
+}
+
+.instructions-container ol li {
+  padding-top: 0.9rem;
+  padding-left: 1rem;
+  color: var(--Stone-600);
+}
+
+.instructions-container ol li::marker,
+.ingredients-container ol li::marker {
+  color: var(--Brown-800);
+}
+/* Nuritions */
+
+.nutritions-container {
+  margin-bottom: 2rem;
+}
+#nutritions-heading {
+  margin-top: 1.5rem;
+  margin-bottom: 0.8rem;
+  color: var(--Brown-800);
+  font-family: "Young Serif", serif;
+}
+
+/* table css */
+table {
+  width: 100%;
+}
+td {
+  border-bottom: 1px solid #ddd;
+  padding: 1rem 0rem;
+  text-align: center;
+}
+td:first-child {
+  padding-left: 2rem;
+  text-align: left;
   color: var(--Stone-900);
+}
+
+td:nth-child(2) {
+  color: var(--Brown-800);
+  padding-right: 2rem;
+  text-align: right;
+  font-weight: 600;
+}
+
+.no-border-bottom {
+  border-bottom: none;
 }
