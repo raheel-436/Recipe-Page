@@ -162,6 +162,66 @@ td:nth-child(2) {
   font-weight: 600;
 }
 
-.no-border-bottom {
-  border-bottom: none;
+@media (max-width: 375px) {
+  .container {
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+    padding: 0 1rem;
+  }
+  .img-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+  }
+  #heading {
+    text-align: left;
+    font-size: 1.4rem;
+  }
+
+  .recipe-summary,
+  .nutrition-summary {
+    font-size: 0.9rem;
+    text-align: left;
+  }
+  .preperation-container {
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 1rem;
+  }
+
+  .preperation-container ul {
+    padding-left: 1rem;
+  }
+
+  .preperation-container ul li {
+    padding-top: 0.7rem;
+  }
+  .ingredients-container ul,
+  .instructions-container ol {
+    padding-left: 1rem;
+  }
+
+  .ingredients-container ul li,
+  .instructions-container ol li {
+    padding-top: 0.7rem;
+    font-size: 0.9rem;
+  }
+  table {
+    width: 100%;
+    font-size: 0.9rem;
+    border-spacing: 0;
+  }
+
+  td {
+    padding: 0.5rem 0;
+  }
+
+  td:first-child {
+    padding-left: 1rem;
+  }
+
+  td:nth-child(2) {
+    padding-right: 1rem;
+  }
 }
